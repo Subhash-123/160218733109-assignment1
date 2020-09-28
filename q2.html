@@ -1,0 +1,57 @@
+<html>
+<head>
+<script type=“text/javascript”>
+
+function start_pos()
+{
+document.getElementById(“img”).style.top = ‘550px’;
+document.getElementById(“img”).style.left = ‘550px’
+}
+
+function right() //Moves image to the right
+
+{
+document.getElementById(“img”).style.top = ‘400px’;
+document.getElementById(“img”).style.left = ‘1000px’;
+}
+
+function left() //moves image to the left
+
+{
+document.getElementById(“img”).style.top = ‘0px’;
+document.getElementById(“img”).style.left = ‘0px’;
+}
+
+function top() //moves image to the top
+
+{
+document.getElementById(“img”).style.top = ‘0px’;
+}
+
+function bottom() //moves image to the bottom
+
+{
+document.getElementById(“img”).style.bottom = ‘0px’;
+}
+
+</script>
+</head>
+
+<body>
+
+<style>
+DIV.movable { position:absolute; TOP:550px; LEFT:550px; }
+</style>
+
+<div id=“img” class=“movable”><img src="/shop.jfif"/></div >
+
+<p>
+<button type=“button” onclick = "left()">Image to the left!</button>
+<button type=“button” onclick = "start_pos()">Reset image</button>
+<button type=“button” onclick = "right()">image to the right!</button>
+<button type=“button” onclick = "top()">image to the top!</button>
+<button type=“button” onclick ="bottom()">image to the bottom!</button>
+</p>
+
+</body>
+</html>
